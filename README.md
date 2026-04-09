@@ -44,6 +44,25 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Database migrations (TypeORM)
+
+```bash
+# create an empty migration file
+$ npm run migration:create -- src/database/migrations/CreateUsersTable
+
+# generate migration from entity changes
+$ npm run migration:generate -- src/database/migrations/UpdateUsersTable
+
+# run pending migrations
+$ npm run migration:run
+
+# revert last migration
+$ npm run migration:revert
+
+# show migration status
+$ npm run migration:show
+```
+
 ## Run tests
 
 ```bash
